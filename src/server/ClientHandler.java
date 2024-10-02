@@ -33,8 +33,7 @@ public class ClientHandler implements Runnable{
                 System.out.println("Received: " + message); // Print received message
                 broadcastMessage(message); // Broadcast the message to other clients
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         finally {
