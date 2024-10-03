@@ -29,18 +29,19 @@ cd chat-room
 ```
 
 ### Running the Application
+- Compile all java class
+```
+javac -d out src/server/*.java src/client/*.java
+```
+
 - Start the server:
 ```
-cd server
-javac ChatServer.java
-java ChatServer
+java -cp out server.ChatServer
 ```
 
 - Start one or more clients:
 ```
-cd client
-javac ChatClient.java
-java ChatClient
+java -cp out client.ChatClient
 ```
 
 ### Usage
